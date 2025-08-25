@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder på webben</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Startsida</a> |
+        <a href="lorem_ipsum.html">Om lorem ipsum</a> |
+        <a href="image.html">koda in bilder</a>
+    </nav>
+
+    <h1>att koda in en bild på sidan</h1>
+
+    <!-- Elementet img är ett inline element,
+    ett element som till skillnad från blockelement (dv, ex h1, p, div)
+    inte lägger beslag på en hel rad -->
+
+    <!--se till att endast använda ett av attributen "width" eller "height". bilden ska inte förvanskas proportionellt... annars skickar anders en pipbomb i ens brevlåda-->
+    <!-- senare i kursen kommer vi ange style attributet / elementet style för ex bilder-->
+    <!-- undvik att skapa luft i element genom att använda flera br element, dvs "<br><br><br><br><br><br>"-->
+    <!-- ett annat element som saknar stängningstagg är elementet hr -->
+    <img src="https://img.koket.se/standard-mega/somrig-fruktsallad-med-vit-chokladkram-och-karamelliserade-havregryn.jpg" alt="Bild på glass i glas" width="500">
+    <br>
+    <img src="https://assets.icanet.se/t_ICAseAbsoluteUrl/mzzkxqtcxz5ja3q55lvv.jpg" alt="hamburgare" width="500">
+    <br>
+    <img src="https://www.lovsta-trahus.se/app/uploads/2023/03/118971-46-scaled.jpg" alt="svenskt hus" width="500">
+
+    <!-- ett omslutande element för ex bilder är elementet "figure" -->
+
+    <!-- förvalt har elementet figure "luft" runt bilden -->
+    <!-- en bildtext anges med elementet "figcaption" -->
+    <figure>
+        <img src="https://www.cmb-chalmers.se/wp-content/uploads/2024/07/glad-sommar.png" alt="sommar" width="500">
+
+        <figcaption>Sommar sol</figcaption>
+
+        <!-- elementen figure, figcaption är exempel på semantiska element -->
+
+    </figure>
+
+</body>
+
+</html>
